@@ -27,4 +27,4 @@ The entire website should be built using HTML only
   - Its purpose and usage
   - Required and optional attributes
   - Accessibility considerations
-3. Validate the HTML using a validator tool to ensure it meets standards.(use the (https://validator.w3.org/detailed.html)[W3C validator])
+3. Validate the HTML using a validator tool to ensure it meets standards.(use the [W3C validator](https://validator.w3.org/detailed.html))
