@@ -104,7 +104,7 @@
     </section>
     <hr>
     <!--Classification of HTML elements-->
-    <section>
+    <li>
       <h2>Classification of HTML elements</h2>
       <dl>
         <dt>
@@ -156,6 +156,7 @@
             <li> <code>&lt;link&gt;</code> for linking external resources</li>
           </ul>
         </dd>
+        <hr>
         <dt>
           <h3>Grouping Elements</h3>
         </dt>
@@ -177,18 +178,186 @@
               <td>non semantic inline container used to style or target small pieces of text or contant within a line
               </td>
             </tr>
-
           </table>
         </dd>
-      </dl>
+        <hr>
+        <dt>
+          <h3>Form elements</h3>
+        </dt>
+        <dd>
+          These are elements that are used to collect user input through forms. They can be used to create text fields,
+          checkboxes, radio buttons, dropdown menus, and more.
+          <table>
+            <tr>
+              <th>Element</th>
+              <th>Description</th>
+              <th>attributes</th>
+            </tr>
+            <tr>
+              <td><code>&lt;form&gt;</code></td>
+              <td> Wraps input elements </td>
+              <td>
+                <ul>
+                  <li><code>action</code> Where the form data is sent(usually a server URL)</li>
+                  <li><code>method</code> <code>GET</code>(data in URL) or <code> POST </code>(data in body)</li>
+
+                </ul>
+              </td>
+            </tr>
+            <tr>
+              <td><code>&lt;input&gt;</code></td>
+              <td>Used to collect various input types</td>
+              <td>
+                <ul>
+
+                  <li><code>type</code> used to define the input type eg:
+                    <ul>
+                      <li>"text": used for text data </li>
+                      <li>"password": used for password input</li>
+                      <li>"checkbox": used for checkboxes</li>
+                      <li>"radio": used for radio buttons</li>
+                      <li>"number": used for numeric input</li>
+                    </ul>
+                  </li>
+
+                  <li><code>name</code> used to identify the input when the form is submitted</li>
+                  <li><code>value</code> used to set the initial value of the input</li>
+                  <li><code>placeholder</code> used to provide a hint to the user about what to enter in the input</li>
+                  <li><code>required</code> used to prevent form submition when empty</li>
+                  <li><code>disabled</code> used to disable the input</li>
+                  <li><code>pattern</code> REGEX pattern to validate input</li>
+                  <li><code>autofocus</code> automatically focuses input on page load</li>
+                  <li><code>min</code> and <code>max</code> used to set the minimum and maximum values for numeric
+                    inputs</li>
+
+                </ul>
+              </td>
+            </tr>
+
+            <tr>
+              <td><code>&lt;textarea&gt;</code></td>
+              <td>Used for multi-line text input</td>
+              <td>
+    <li><code>name</code>: field name used in the name for submission</li>
+    <li><code>id</code>: used to connect with <code>&lt;label&gt;</code></li>
+    <li><code>rows</code><code>cols</code>: Visible size of text area</li>
+    <li><code>placeholder</code>: Hint inside the text area</li>
+    <li><code>required</code>: used to prevent form submition when empty</li>
+    </td>
+    </tr>
+
+    <tr>
+      <td><code>&lt;select&gt;</code> and <code>&lt;option&gt;</code></td>
+      <td>This is a dropdown menu</td>
+      <td>
+        <code>&lt;select&gt;</code> element attributes:
+        <ul>
+          <li><code>name</code>: Field name</li>
+          <li><code>id</code>: For linking with <code>&lt;label&gt;</code></li>
+          <li><code>required</code>: Must select something</li>
+          <li><code>multiple</code>: Allows multiple selections</li>
+          <li><code>disabled</code>: Makes dropdown unusable</li>
+        </ul>
+        <code>&lt;option&gt;</code> element attributes:
+        <ul>
+          <li> <code>value</code>: Data sent when selected</li>
+          <li><code>selected</code>: Marks that option as default</li>
+          <li><code>disabled</code>: Grays out the option</li>
+        </ul>
+      </td>
+    </tr>
+
+    <tr>
+      <td><code>&lt;label&gt;</code></td>
+      <td>Used to associate text with form controls</td>
+      <td><code>for</code>:ID of the input it describes</td>
+    </tr>
+    <tr>
+      <td><code>&lt;button&gt;</code></td>
+      <td>Used to create clickable buttons</td>
+      <td>
+        List of attributes:
+        <ul>
+          <li><code>type</code> <code>submit</code>, <code>reset</code>or <code>button</code></li>
+          <li><code>disabled</code>Disables the button</li>
+          <li><code>name</code>,<code>value</code> send button data when form is submitted</li>
+          <li><code>autofocus</code>automatically focus the button on load</li>
+        </ul>
+      </td>
+    </tr>
+    </table>
+    </dd>
+    <hr>
+    <dt>
+      <h3>Media elements</h3>
+    </dt>
+    <dd>
+      These elements are used to embed media such as images, audio, and video into a web page.
+      <br>
+      These elements are:
+      <ol>
+        <li>
+          <dl>
+            <dt>
+              <code>&lt;img&gt;</code>
+            </dt>
+            <dd>
+              used to embed images in a web page. It has the following attributes:
+              <ul>
+                <li><code>src</code>: The URL of the image</li>
+                <li><code>alt</code>: Alternative text for the image</li>
+                <li><code>width</code> and <code>height</code>: Used to set the size of the image</li>
+                <li><code>loading</code>: Used to control how the image is loaded (e.g., lazy loading)</li>
+              </ul>
+            </dd>
+        </li>
+        <li>
+    <dt>
+      <code>&lt;audio&gt;</code>
+
+    </dt>
+    <dd>
+      Used to embed audio files in a web page. It has the following attributes:
+      <ul>
+        <li><code>&lt;src&gt;</code>Path to the audio file</li>
+        <li><code>controls</code>: Adds playback controls (play, pause, volume, etc.)</li>
+        <li><code>autoplay</code>: Automatically starts playing the audio when the page loads</li>
+        <li><code>loop</code>: Repeats the audio when it ends</li>
+        <li><code>muted</code>: Mutes the audio by default</li>
+      </ul>
+    </dd>
+    </li>
+    <li>
       <dt>
+        <code>&lt;video&gt;</code>
+      </dt>
+      <dd>
+        Used to embed video files in a web page. It has the following attributes:
+        <ul>
+          <li><code>src</code>: Path to the video file</li>
+          <li><code>controls</code>: Display the pause, play and volume buttons</li>
+          <li><code>autoplay</code>: Plays the video automatocally the page loads</li>
+          <li><code>loop</code>: Repeats the video when it ends</li>
+          <li><code>muted</code>: Mutes the video by default</li>
+        </ul>
 
-    </section>
+      </dd>
+      </dl>
+    </li>
+
+    </ol>
+
+    </dd>
+
+    </dl>
+    <dt>
+
+      </section>
 
 
-    <footer>
+      <footer>
 
-    </footer>
+      </footer>
 
 
 </body>

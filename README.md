@@ -1,4 +1,4 @@
-# Project Title: HTML Elements Reference Guide
+# HTML Elements Reference Guide
 ---
 Create a webpage that serves as both a reference guide for HTML elements and as a demonstration of those elements in action.
 
