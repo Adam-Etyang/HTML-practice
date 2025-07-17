@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> HTML Elements refernce</title>
+  <meta name="description" content="A comprehensi guide to HTML elements">
+  <link rel="icon" href="favicon.ico">
+</head>
+
+<body>
+
+  <header>
+    <!--Navigation elements-->
+
+    <nav>
+      <ul>
+        <li></li>
+        <li></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+
+    <!-- Main content area -->
+
+    <h1>HTML Elements Reference</h1>
+    <hr>
+    <h2>An overview and Introduction</h2>
+    <section id="Overview">
+      <p>
+        A HTML element is a type of HTML document component that defines the structure and content of a web page. Each
+        element is represented by a tag, which can include attributes to provide additional information about the
+        element. HTML elements can be nested within each other to create complex layouts and structures.
+      </p>
+      <p>
+        It is important to note that elements are not tags. Tags are the markup used to create elements, while
+        elements
+        are the entire structure that includes the opening tag, content, and closing tag. For example, in the element
+      <pre><code>
+          &lt;p&gt; This is a paragraph.&lt;/p&gt;
+        </code></pre>
+      <code>
+        &lt;p&gt;
+      </code> is the opening tag,
+      <code>
+        This is a paragraph.
+      </code>is the content, and
+      <code>
+        &lt;/p&gt;
+      </code> is the
+      closing tag.
+      <article>
+        <p><strong>Tags</strong> are used to delimit the start and end of elements in the markup, The start and end
+          tags of certain normal elements can be omited. The contents of the elements must be placed between just
+          after the start tag(which may be implied in certain cases) and just before the end tag.
+          For more info on this check <a
+            href="https://html.spec.whatwg.org/multipage/syntax.html#tagshttps://html.spec.whatwg.org/multipage/syntax.html#tags">W3C
+            documentation</a></p>
+        <p>In the HTML syntax, most elements are written with a start tag and an end tag, with the content in between.
+          An <strong>HTML tag</strong> is composed of the name of the element, surrounded by angle brackets. An end
+          tag also has a
+          slash after the opening angle bracket, to distinguish it from the start tag.</p>
+
+        <div>
+          <pre><code>
+              &lt;p&gt;This is a paragraph.&lt;/p&gt;
+            </code></pre>
+          <!--TODO: add image here-->
+          <div></div>
+        </div>
+      </article>
+    </section>
+    <!--Types of elements-->
+    <hr>
+    <section>
+      <h3>Types of HTML elements</h3>
+      There are three kinds of HTML elements:
+      <dl>
+        <dt>
+          <strong>Normal elements:</strong>
+        </dt>
+        <dd>These usually have a start tage and an end tag although they can be
+          omitted
+        </dd>
+        <dt>
+          <strong>Raw text elements</strong>
+        </dt>
+        <dd>
+          These are constructed with :
+          <ul>
+            <li>A start tag(in the form of <code>&lt;tag&gt;</code>)</li>
+            <li>Some amount of text content but no elements(all atgs , apart from the applicable end tag will be
+              interpreted as content)</li>
+            <li>An end tag in which the elemnt name is prefixed with a slash i.e. <code>&lt;/tag&gt;</code></li>
+          </ul>
+        </dd>
+        <dt><strong>Void elements</strong></dt>
+        <dd> Also called empty elements, single elements only have a start tags for example the
+          <code>&lt;img&gt;</code> that is used to embed images inside the HTML document
+        </dd>
+      </dl>
+    </section>
+    <hr>
+    <!--Classification of HTML elements-->
+    <section>
+      <h2>Classification of HTML elements</h2>
+      <dl>
+        <dt>
+          <h3>Block level elements vs inline elements</h3>
+        </dt>
+        <dd>
+          Block level elements are elements that start on a new line and take up the full width available
+          while inline elements are elements that do not start on a new line but only take up as much width as
+          necessary
+          <br>
+          Examples of block level elements include:
+          <ul>
+            <li> <code>&lt;div&gt;</code></li>
+            <li> <code>&lt;p&gt;</code></li>
+            <li> From <code>&lt;h1&gt;</code> to <code>&lt;h6&gt;</code></li>
+            <li> <code>&lt;ul&gt;</code>, <code>&lt;ol&gt;</code>, <code>&lt;li&gt;</code></li>
+            <li> <code>&lt;table&gt;</code></li>
+            <li> <code>&lt;table&gt;</code></li>
+            <li> <code>&lt;section&gt;</code></li>
+            <li> <code>&lt;article&gt;</code></li>
+            <li> <code>&lt;header&gt;</code>, <code>&lt;footer&gt;</code>, <code>&lt;header&gt;</code></li>
+          </ul>
+          Examples of inline elements include:
+          <ul>
+            <li> <code>&lt;span&gt;</code>Generic inline container</li>
+            <li><code>&lt;a&gt;</code>Anchor(hyperlink)</li>
+            <li><code>&lt;strong&gt;</code> for <b>bold</b> text</li>
+            <li><code>&lt;img&gt;</code> For images</li>
+
+            <li><code>&lt;em&gt;</code> For <i>italic text</i></li>
+          </ul>
+        </dd>
+        <hr>
+        <dt>
+          <h3>Empty elements vs non-empty elements</h3>
+        </dt>
+        <dd>
+          Empty elements are elements that do not have any content between the start and end tags. They are also
+          called
+          void elements.
+          While non-empty elements have content between the start and end tags.
+          <br>
+          Examples of empty elements include:
+          <ul>
+            <li> <code>&lt;br&gt;</code> for line breaks</li>
+            <li> <code>&lt;img&gt;</code> for images</li>
+            <li> <code>&lt;hr&gt;</code> for horizontal rules</li>
+            <li> <code>&lt;input&gt;</code> for form inputs</li>
+            <li> <code>&lt;meta&gt;</code> for metadata</li>
+            <li> <code>&lt;link&gt;</code> for linking external resources</li>
+          </ul>
+        </dd>
+      </dl>
+      <dt>
+
+    </section>
+
+
+    <footer>
+
+    </footer>
+
+
+</body>
+
+</html>

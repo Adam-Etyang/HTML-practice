@@ -20,3 +20,11 @@ The entire website should be built using HTML only
 9. Interactive elements like buttons and details/summary elements.
 10. Metadata elements like `<base>` `<title>`, `<meta>`, and `<link>`.
 
+---
+## Learning approach
+1. Build the page section by section, starting with the basic structure and then adding more complex elements.
+2. For each element research:
+  - Its purpose and usage
+  - Required and optional attributes
+  - Accessibility considerations
+3. Validate the HTML using a validator tool to ensure it meets standards.(use the (https://validator.w3.org/detailed.html)[W3C validator])
